@@ -1,6 +1,6 @@
 import React from 'react';
 
-const inputTodo =() => {
+const InputTodo =() => {
     return <h1> Input todo</h1>;
 };
-export default inputTodo;
+export default InputTodo;

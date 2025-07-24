@@ -3,12 +3,12 @@ import React ,{Fragment} from 'react';
 import './App.css';
 
 //components
-import inputTodo from "./components/inputTodo";
+import InputTodo from "./components/InputTodo";
 
 function App() {
   return (
     <Fragment>
-      <inputTodo />
+      <InputTodo />
     </Fragment>
   );
 }
