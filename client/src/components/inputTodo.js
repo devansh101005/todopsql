@@ -14,7 +14,7 @@ const onSubmitForm=async(e)=> {
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(body)
     });
-    console.log(response);
+    window.location = "/"; // Refresh the page to see the new todo
 } catch(error) {
         console.error(error.message);
     }
