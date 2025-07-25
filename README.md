@@ -4,7 +4,7 @@ This is a full-stack TODO application built with the PERN stack (PostgreSQL, Exp
 
 ## Project Structure
 
-```
+
 client/
   package.json
   README.md
@@ -30,7 +30,7 @@ server/
   db.js
   index.js
   package.json
-```
+
 
 ## Features
 - Add, edit, and delete TODO items
@@ -47,22 +47,22 @@ server/
 ### Setup
 
 #### 1. Clone the repository
-```sh
+
 git clone <repo-url>
 cd PERN-TODO
-```
+
 
 #### 2. Install dependencies
 - For the server:
-  ```sh
+  
   cd server
   npm install
-  ```
+  
 - For the client:
-  ```sh
+  
   cd client
   npm install
-  ```
+  
 
 #### 3. Set up the database
 - Create a PostgreSQL database and run the SQL script in `server/database.sql` to set up the tables.
@@ -71,16 +71,16 @@ cd PERN-TODO
 - Update database connection details in `server/db.js` as needed.
 
 #### 5. Start the server
-```sh
+
 cd server
 npm start
-```
+
 
 #### 6. Start the client
-```sh
+
 cd client
 npm start
-```
+
 
 The React app will be available at [http://localhost:3000](http://localhost:3000).
 
@@ -95,6 +95,3 @@ The React app will be available at [http://localhost:3000](http://localhost:3000
 - `database.sql`: SQL script to set up the database schema.
 - `db.js`: Database connection setup.
 - `index.js`: Express server and API routes.
-
-## License
-MIT
