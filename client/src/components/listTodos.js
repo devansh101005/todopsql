@@ -4,6 +4,22 @@ const ListTodos =() => {
 
 
     const [todos, setTodos] = useState([]);
+
+    // Function to delete a todo
+    const deleteTodo = async (id) => {
+        try {
+            const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
+                method: "DELETE"
+            });
+
+            setTodos(todos.filter(todo => todo.todo_id !== id));
+            console.log(deleteTodo);
+         }
+
+        catch(err) {
+            console.error(err.message);
+        }
+    }
 const getTodos = async() => {
     try {
         const response = await fetch("http://localhost:5000/todos");
@@ -43,7 +59,7 @@ const getTodos = async() => {
                   <button className="btn btn-warning">Edit</button>
               </td>
               <td>
-                  <button className="btn btn-danger">Delete</button>
+                  <button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>Delete</button>
               </td>
           </tr>
       ))}
