@@ -8,7 +8,10 @@ import InputTodo from "./components/InputTodo";
 function App() {
   return (
     <Fragment>
-      <InputTodo />
+      <div className="container">
+        <InputTodo/>
+      </div>
+      
     </Fragment>
   );
 }
